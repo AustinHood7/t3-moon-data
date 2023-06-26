@@ -8,3 +8,5 @@ export const MoonDataSchema = z.object({
   phaseAngle: z.number(),
   phaseName: z.string(),
 });
+
+export type MoonData = z.infer<typeof MoonDataSchema>;

@@ -1,7 +1,7 @@
 import axios from "axios";
-import { z } from "zod";
 import { createTRPCRouter, publicProcedure } from "~/server/api/trpc";
-import { MoonDataSchema } from "../schemas";
+import { MoonDataSchema, MoonData } from "../schemas";
+import { z } from "zod";
 
 export const exampleRouter = createTRPCRouter({
   
@@ -19,10 +19,10 @@ export const exampleRouter = createTRPCRouter({
       const now = new Date();
       const formattedNow = now.toISOString().replace(/[:T]/g, '-').slice(0, 19);
 
-      const response = await axios.get('https://moon-api1.p.rapidapi.com/phase', {
+      const response = await axios.get<MoonData>('https://moon-api1.p.rapidapi.com/phase', {
         headers: {
-          'X-RapidAPI-Key': process.env.RAPIDAPI_KEY,
-          'X-RapidAPI-Host': process.env.RAPIDAPI_HOST
+          'X-RapidAPI-Key': process.env.RAPIDAPI_KEY!,
+          'X-RapidAPI-Host': process.env.RAPIDAPI_HOST!
         },
         params: {
           'date-time': formattedNow,
