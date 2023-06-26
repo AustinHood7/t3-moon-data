@@ -8,6 +8,8 @@ export const env = createEnv({
    */
   server: {
     NODE_ENV: z.enum(["development", "test", "production"]),
+    RAPIDAPI_KEY: z.string(),
+    RAPIDAPI_HOST: z.string(),
   },
 
   /**
@@ -25,6 +27,8 @@ export const env = createEnv({
    */
   runtimeEnv: {
     NODE_ENV: process.env.NODE_ENV,
+    RAPIDAPI_KEY: process.env.RAPIDAPI_KEY,
+    RAPIDAPI_HOST: process.env.RAPIDAPI_HOST,
     // NEXT_PUBLIC_CLIENTVAR: process.env.NEXT_PUBLIC_CLIENTVAR,
   },
   /**

@@ -21,8 +21,8 @@ export const exampleRouter = createTRPCRouter({
 
       const response = await axios.get('https://moon-api1.p.rapidapi.com/phase', {
         headers: {
-          'X-RapidAPI-Key': '000ab2eadbmshdb5e264cda6750ap1ec88djsn2fd937e60c56',
-          'X-RapidAPI-Host': 'moon-api1.p.rapidapi.com'
+          'X-RapidAPI-Key': process.env.RAPIDAPI_KEY,
+          'X-RapidAPI-Host': process.env.RAPIDAPI_HOST
         },
         params: {
           'date-time': formattedNow,
