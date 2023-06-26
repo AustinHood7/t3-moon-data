@@ -4,6 +4,8 @@ import { api } from "~/utils/api";
 
 export default function Home() {
   const hello = api.example.hello.useQuery({ text: "from tRPC" });
+  const goodbye = api.example.goodbye.useQuery({ text : "from Austin"})
+  const moonData = api.example.getMoonData.useQuery();
 
   return (
     <>
@@ -44,6 +46,12 @@ export default function Home() {
           <p className="text-2xl text-white">
             {hello.data ? hello.data.greeting : "Loading tRPC query..."}
           </p>
+          <div className="text-4xl text-slate-100">
+            {goodbye.data ? goodbye.data.greeting : "Loading query..."}
+          </div>
+          <div className="text-xl text-white">
+            {moonData.data ? `Moon radius: ${moonData.data.radius} km` : "Loading Moon Data..."}
+          </div>
         </div>
       </main>
     </>
