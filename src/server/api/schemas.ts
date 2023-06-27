@@ -10,3 +10,10 @@ export const MoonDataSchema = z.object({
 });
 
 export type MoonData = z.infer<typeof MoonDataSchema>;
+
+export const MoonIlluminationSchema = z.object({
+  dateTime: z.string(),
+  illumination: z.number(),
+});
+
+export type MoonIllumination = z.infer<typeof MoonIlluminationSchema>;
