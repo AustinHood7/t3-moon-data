@@ -30,7 +30,7 @@ export const exampleRouter = createTRPCRouter({
           'angle-units': 'deg'
         },
       });
-      
+      response.data.dateTime = response.data.dateTime.slice(0, 9);
       return response.data;
     }),
 
