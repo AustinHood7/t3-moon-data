@@ -2,7 +2,4 @@
 @tailwind components;
 @tailwind utilities;
 
-bg {
-    background-color: black;
-    background: radial-gradient(circle at 50% 40%, rgba(252,211,77,0.6) 0%, rgba(28,25,23,1) 40%); 
-}
+

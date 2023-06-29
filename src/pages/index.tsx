@@ -46,7 +46,7 @@ export default function Home() {
                     </div>
                       <div className="text-xl text-white p-4 rounded-xl bg-white/10 hover:bg-white/20 mb-16 md:mb-0 transition duration-500"  id="dropdown">
                         <div className="h-[25vh] overflow-scroll">
-                          The moon phase angle, often referred to as the "elongation", is the angle between the moon and the sun as viewed from Earth. 
+                          The moon phase angle, often referred to as the elongation, is the angle between the moon and the sun as viewed from Earth. 
                           It's a way to quantify the phases of the moon. It essentially measures how much of the moon's face is illuminated by the sun from the perspective 
                           of an observer on Earth.Astronomers and astrophotographers often use the moon phase angle to plan observations and photographs. 
                           It can also be of interest to anyone observing the moon, as the moon's appearance can change dramatically depending on the phase angle.
