@@ -19,7 +19,9 @@
     "next": "^13.4.2",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-tsparticles": "^2.10.1",
     "superjson": "1.12.2",
+    "tsparticles": "^2.10.1",
     "zod": "^3.21.4"
   },
   "devDependencies": {

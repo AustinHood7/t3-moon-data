@@ -1,6 +1,8 @@
 import Head from "next/head";
 import { api } from "~/utils/api";
 import Image from "next/image";
+import ParticlesComponent from "~/particlesComponent";
+
 
 export default function Home() {
 
@@ -10,6 +12,8 @@ export default function Home() {
   ? moonData.data.phaseName.replace(' ', '_').toLowerCase() 
   : '';
 
+
+
   return (
     <>            
       <Head>
@@ -18,7 +22,8 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="flex min-h-screen flex-col items-center bg-gradient-to-t from-indigo-900 to-stone-900">
-        <div className="container flex flex-col items-center gap-12 px-4 sm:px-0 py-16 ">
+        <ParticlesComponent />
+        <div className="container flex flex-col items-center gap-12 px-4 sm:px-0 py-16 relative z-10">
           {moonData.isLoading ? (
             <div className="text-xl text-white">Loading Moon Data...</div>
           ) : (
