@@ -96,6 +96,7 @@ export default function Home() {
             </div>
           )}
         </div>
+        <div className="text-xl mt-auto text-stone-100 mb-4">Powered by Moon API</div>
       </main>
     </>
   )
