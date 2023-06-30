@@ -30,7 +30,7 @@ export default function Home() {
             <div className="flex flex-col items-center text-center pt-6 px-4 sm:px-0">
               <h1 className="text-5xl text-slate-100 ">{moonData.data?.phaseName}</h1>
               <div className="flex flex-col sm:flex-row items-center justify-evenly gap-20 pt-10">
-                <div className="text-2xl text-white p-4 rounded-xl bg-white/10 hover:bg-white/20">
+                <div className="text-2xl text-white p-4 rounded-xl border-0 backdrop-blur-[.2rem]">
                   <h2 className="font-bold"> {moonData.data?.dateTime}</h2> 
                 </div>
                 <Image 
@@ -39,17 +39,17 @@ export default function Home() {
                   width={300}
                   height={300}
                 />
-                <div className="text-2xl text-white p-4 rounded-xl bg-white/10 hover:bg-white/20 mb-16 md:mb-0">
+                <div className="text-2xl text-white p-4 rounded-xl border-0 backdrop-blur-[.2rem]  mb-16 md:mb-0">
                   <h2 className="font-bold ">US East</h2> 
                 </div>
               </div>
               <div className="flex sm:flex-row w-full gap-10 md:w-[55vw] items-center justify-evenly">
                 <div className="md:flex gap-10 justify-evenly">
                   <div className="flex flex-col items-center gap-4">
-                    <div className="text-xl text-white p-4 rounded-xl bg-white/10 hover:bg-white/20" >
+                    <div className="text-xl text-white p-4 rounded-xl border-0 backdrop-blur-[.2rem] hover:bg-stone-100/10 transition-all duration-300" >
                       <h2 className=""><h1 className="text-xl font-bold pb-2">Phase Angle </h1> {moonData.data?.phaseAngle}</h2> 
                     </div>
-                      <div className="text-xl text-white p-4 rounded-xl bg-white/10 hover:bg-white/20 mb-16 md:mb-0 transition duration-500"  id="dropdown">
+                      <div className="text-xl text-white p-4 rounded-xl border border-stone-100/50 backdrop-blur-[.2rem] mb-16 md:mb-0"  id="dropdown">
                         <div className="h-[25vh] overflow-scroll">
                           The moon phase angle, often referred to as the elongation, is the angle between the moon and the sun as viewed from Earth. 
                           It&apos;s a way to quantify the phases of the moon. It essentially measures how much of the moon&apos;s face is illuminated by the sun from the perspective 
@@ -59,10 +59,10 @@ export default function Home() {
                       </div> 
                   </div>
                   <div className="flex flex-col items-center gap-4">
-                    <div className="text-xl text-white p-4 rounded-xl bg-white/10 hover:bg-white/20" >
+                    <div className="text-xl text-white p-4 rounded-xl backdrop-blur-[.2rem] hover:bg-stone-100/10 transition-all duration-300" >
                       <h2 className=""><h1 className="text-xl font-bold pb-2">Phase Age </h1> {moonData.data?.phaseAge}</h2> 
                     </div>
-                      <div className="text-xl text-white p-4 rounded-xl bg-white/10 hover:bg-white/20 mb-16 md:mb-0" id="dropdown">
+                      <div className="text-xl text-white p-4 rounded-xl border border-stone-100/50 backdrop-blur-[.2rem] mb-16 md:mb-0" id="dropdown">
                         <div className="h-[25vh] overflow-scroll">
                           The Moon phase age is the number of days since the last New Moon. It indicates the Moon&apos;s progress in its cycle and ranges between 0 to approximately 
                           29.5 days. The New Moon phase occurs when the Moon is positioned between the Earth and the Sun, making it almost invisible to us here on Earth.The Moon 
@@ -75,10 +75,10 @@ export default function Home() {
                       </div>
                   </div>
                   <div className="flex flex-col items-center gap-4">
-                    <div className="text-xl text-white p-4 rounded-xl bg-white/10 hover:bg-white/20" >
+                    <div className="text-xl text-white p-4 rounded-xl backdrop-blur-[.5rem] hover:bg-stone-100/10 transition-all duration-300" >
                       <h2 className=""><h1 className="text-xl font-bold pb-2">Phase </h1> {moonData.data?.phase}</h2> 
                     </div>
-                    <div className="text-xl text-white p-4 rounded-xl bg-white/10 hover:bg-white/20"  id="dropdown">
+                    <div className="text-xl text-white p-4 rounded-xl border border-stone-100/50 backdrop-blur-[.2rem]"  id="dropdown">
 
                       <div className="h-[25vh] overflow-scroll">
                         This is a normalized measure of the lunar cycle, where the New Moon is 0, First Quarter is 0.25, Full Moon is 0.5, and Last Quarter is 0.75. 
