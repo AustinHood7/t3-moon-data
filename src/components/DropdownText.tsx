@@ -12,7 +12,7 @@ const AnimatedDiv: React.FC<Props> = ({ text, numberProp, titleText }) => {
   const handleClick = () => {
     setIsVisible(!isVisible);
   }
-
+//test comment
   return (
     <div className='flex flex-col items-center gap-4'>
       <div className="text-xl text-white p-4 rounded-xl backdrop-blur-[.2rem] hover:bg-stone-100/10 transition-all duration-300" >
